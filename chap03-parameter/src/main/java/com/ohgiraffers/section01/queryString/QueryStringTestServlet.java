@@ -72,5 +72,15 @@ public class QueryStringTestServlet extends HttpServlet {
             }
         }
 
+        System.out.println("==========================");
+
+        for (Map.Entry<String, String[]> entry : requestMap.entrySet()){
+//            Iterator<String> iterator = Arrays.asList(entry.getValue()).iterator();
+            System.out.print(entry.getKey() + " : " );
+            for (String value : entry.getValue()){
+                System.out.println(value);
+            }
+        }
+
     }
 }
