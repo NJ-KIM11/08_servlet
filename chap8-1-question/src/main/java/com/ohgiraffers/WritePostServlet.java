@@ -28,7 +28,7 @@ public class WritePostServlet extends HttpServlet {
             req.setAttribute("titleIsValid", titleIsValid);
             req.setAttribute("contentIsValid", contentIsValid);
 
-            RequestDispatcher rd = req.getRequestDispatcher("index1.jsp");
+            RequestDispatcher rd = req.getRequestDispatcher("index.jsp");
             rd.forward(req, resp);
         }
 
