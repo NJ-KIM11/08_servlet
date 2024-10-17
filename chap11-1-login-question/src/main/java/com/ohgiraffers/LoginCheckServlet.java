@@ -41,6 +41,7 @@ public class LoginCheckServlet extends HttpServlet {
         }else{
             String checkStatement = "id나비밀번호가다릅니다.";
             Cookie statementCookie = new Cookie("checkStatement", checkStatement);
+            statementCookie.setMaxAge(3);
             resp.addCookie(statementCookie);
             resp.sendRedirect("/login.jsp");
 

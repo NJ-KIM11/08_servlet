@@ -12,6 +12,9 @@
 </head>
 <body>
 <%
+    if(request.getAttribute("userId")==null){
+        response.sendRedirect("/login.jsp");
+    }
     String id = (String)request.getAttribute("userId");
 %>
 
