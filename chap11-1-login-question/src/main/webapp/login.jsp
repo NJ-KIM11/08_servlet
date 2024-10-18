@@ -37,7 +37,7 @@
         <h1>로그인 페이지</h1>
         <input type="text" placeholder="User Id" name="userId"/>
         <input type="password" placeholder="Password" name="password">
-        <button type="submit">로그인</button>
+        <button type="submseit">로그인</button>
     </form>
 
 

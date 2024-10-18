@@ -7,14 +7,11 @@
     <context-param>
         <param-name>connection-info</param-name>
         <param-value>/WEB-INF/config/connection-info.properties</param-value>
-        <!--   경로의 파일     -->
     </context-param>
-
 
     <context-param>
         <param-name>mapper-location</param-name>
         <param-value>/WEB-INF/mapper/</param-value>
-        <!--   경로 안에 있는 것들     -->
     </context-param>
 
 </web-app>

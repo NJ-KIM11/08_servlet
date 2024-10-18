@@ -15,7 +15,7 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <!--   어느 서블릿에 연결할지     -->
+        <!--    어느 서블릿에 연결할지     -->
         <servlet-name>xmlmapping</servlet-name>
         <!--    연결할 요청    -->
         <url-pattern>/xml-lifecycle</url-pattern>

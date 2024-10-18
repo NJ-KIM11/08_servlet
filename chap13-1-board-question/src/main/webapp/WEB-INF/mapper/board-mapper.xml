@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+    <entry key="selectAllPost">
+        SELECT
+            *
+        FROM MAINBOARD;
+    </entry>
+
+    <entry key="selectOnePostById">
+        SELECT
+            *
+        FROM MAINBOARD
+        WHERE POST_ID = ?;
+    </entry>
+
+    <entry key="selectNewPostId">
+        SELECT
+            (MAX(POST_ID)) + 1 AS POST_ID
+        FROM MAINBOARD;
+    </entry>
+
+    <entry key="insertPost">
+        INSERT INTO MAINBOARD
+        (POST_ID, TITLE, CONTENT)
+        VALUES(?, ?, ?);
+    </entry>
+
+    <entry key="updatePost">
+        UPDATE MAINBOARD
+        SET TITLE = ?,
+            CONTENT = ?
+        WHERE POST_ID = ?;
+    </entry>
+
+    <entry key="deletePost">
+        DELETE FROM MAINBOARD
+        WHERE POST_ID = ?;
+    </entry>
+
+    <entry key="resetPostId">
+        UPDATE MAINBOARD
+        SET POST_ID = POST_ID - 1
+        WHERE POST_ID > ?;
+    </entry>
+
+</properties>
